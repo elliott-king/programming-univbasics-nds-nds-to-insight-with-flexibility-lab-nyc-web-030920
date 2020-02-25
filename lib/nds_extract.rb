@@ -52,7 +52,7 @@ def movies_with_director_key(name, movies_collection)
   movies_collection.each do |movie|
     ret << movie_with_director_name(name, movie)
   end
-  movies_collection
+  ret
 end
 
 
