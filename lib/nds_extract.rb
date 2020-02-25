@@ -84,7 +84,7 @@ def movies_with_directors_set(source)
   puts source
   ret = []
   source.each do |director|
-    ret << director[:movies]
+    ret << movies_with_director_key(director[:name], director[:movies])
   end
   ret
 end
